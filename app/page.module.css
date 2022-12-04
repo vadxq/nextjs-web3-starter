@@ -64,8 +64,6 @@
   border-radius: 5px;
   padding: 0.75rem;
   font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
 }
 
 .grid {
@@ -96,7 +94,7 @@
 }
 
 .card h2 {
-  margin: 0 0 1rem 0;
+  margin: 0 0 1rem;
   font-size: 1.5rem;
 }
 
@@ -120,26 +118,26 @@
 
 @media (prefers-color-scheme: dark) {
   .title {
-    background: linear-gradient(180deg, #ffffff 0%, #aaaaaa 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    background: linear-gradient(180deg, #fff 0%, #aaa 100%);
     background-clip: text;
-    text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
   }
+
   .title a {
     background: linear-gradient(180deg, #0070f3 0%, #0153af 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     background-clip: text;
-    text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
   }
+
   .card,
   .footer {
     border-color: #222;
   }
+
   .code {
     background: #111;
   }
+
   .logo img {
     filter: invert(1);
   }

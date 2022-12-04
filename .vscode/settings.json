@@ -1,6 +1,4 @@
 {
-  "typescript.tsdk": "node_modules/.pnpm/typescript@4.9.3/node_modules/typescript/lib",
-  "typescript.enablePromptUseWorkspaceTsdk": true,
   "editor.formatOnType": true,
   "editor.formatOnSave": true,
   "editor.tabSize": 2,
@@ -16,15 +14,9 @@
   "files.associations": {
     "editor.snippetSuggestions": "top"
   },
-  "[css]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[ts]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[tsx]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.guides.bracketPairs": "active",
-  "files.autoSave": "afterDelay"
+  "files.autoSave": "afterDelay",
+  "typescript.tsdk": "node_modules/.pnpm/typescript@4.9.3/node_modules/typescript/lib",
+  "typescript.enablePromptUseWorkspaceTsdk": true
 }
