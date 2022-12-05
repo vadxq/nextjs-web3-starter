@@ -2,7 +2,13 @@
 export function DefaultHeadTag() {
   return (
     <>
-      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta charSet="UTF-8" />
+      <meta httpEquiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+      <meta name="renderer" content="webkit" />
+      <meta
+        name="viewport"
+        content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=0"
+      />
       <link
         href="/favicon/apple-touch-icon.png"
         rel="apple-touch-icon"
