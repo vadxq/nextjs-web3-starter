@@ -19,3 +19,7 @@ declare global {
     msRequestAnimationFrame: (callback: FrameRequestCallback) => number;
   }
 }
+
+declare interface Window {
+  ethereum: any;
+}
