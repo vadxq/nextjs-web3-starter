@@ -1,5 +1,6 @@
 import '@/styles/index.scss';
 import { Flexible } from '@/ui/flexible';
+import { Toaster } from '@/ui/toast/toast';
 
 export default function RootLayout({
   children
@@ -15,6 +16,7 @@ export default function RootLayout({
       <head />
       <body>
         <Flexible />
+        <Toaster />
         {children}
       </body>
     </html>
