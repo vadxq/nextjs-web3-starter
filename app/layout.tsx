@@ -1,6 +1,8 @@
 import '@/styles/index.scss';
+import RootLayoutClient from '@/components/layout';
 import { Flexible } from '@/ui/flexible';
 import { Toaster } from '@/ui/toast/toast';
+import Navbar from '@/components/navbar';
 
 export default function RootLayout({
   children
@@ -17,7 +19,10 @@ export default function RootLayout({
       <body>
         <Flexible />
         <Toaster />
-        {children}
+        <RootLayoutClient>
+          <Navbar />
+          {children}
+        </RootLayoutClient>
       </body>
     </html>
   );
