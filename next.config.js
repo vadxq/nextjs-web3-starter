@@ -4,7 +4,9 @@ const nextConfig = {
   swcMinify: true,
   experimental: {
     appDir: true,
-    runtime: 'experimental-edge'
+    // runtime: 'experimental-edge',
+    // turbo: true,
+    serverComponentsExternalPackages: ['@prisma/client']
   }
 };
 
