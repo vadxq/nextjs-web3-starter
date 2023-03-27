@@ -1,7 +1,7 @@
 import '@/styles/index.scss';
 import RootLayoutClient from '@/components/layout';
-import { Flexible } from '@/ui/flexible';
-import { Toaster } from '@/ui/toast/toast';
+import { Flexible } from '@/components/theme/flexible';
+import { Toaster } from '@/components/toast/toast';
 import Navbar from '@/components/navbar';
 
 export default function RootLayout({

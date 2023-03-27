@@ -1,4 +1,4 @@
-import { SkeletonCard } from '@/ui/skeletonCard';
+import { SkeletonCard } from '@/components/skeleton/skeletonCard';
 export default function Loading() {
   return (
     <div className="space-y-4">

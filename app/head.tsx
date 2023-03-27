@@ -1,4 +1,4 @@
-import { DefaultHeadTag } from '@/ui/defaultHeadTag';
+import { DefaultHeadTag } from '@/components/theme/defaultHeadTag';
 
 export default function Head() {
   return (
