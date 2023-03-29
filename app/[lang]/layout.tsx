@@ -5,6 +5,7 @@ import { Toaster } from '@/components/toast/toast';
 import Navbar from '@/components/navbar';
 import { Metadata } from 'next';
 import { DefaultMetadata } from '@/components/theme/metadata';
+import { i18n } from '@/i18n/config';
 
 export async function generateMetadata(): Promise<Metadata> {
   return {
@@ -14,13 +15,19 @@ export async function generateMetadata(): Promise<Metadata> {
   };
 }
 
+export async function generateStaticParams() {
+  return i18n.locales.map((locale) => ({ lang: locale }));
+}
+
 export default function RootLayout({
-  children
+  children,
+  params
 }: {
   children: React.ReactNode;
+  params: { lang: string };
 }) {
   return (
-    <html lang="en">
+    <html lang={params.lang}>
       {/*
         <head /> will contain the components returned by the nearest parent
         head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head

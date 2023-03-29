@@ -1,6 +1,6 @@
 import { getCookie } from './cookie';
 import { getApiUrl } from './helpers';
-import toast from '@/ui/toast/toast';
+import toast from '@/components/toast/toast';
 
 interface RequestOptions extends RequestInit {
   responseType?:
