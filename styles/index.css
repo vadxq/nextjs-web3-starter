@@ -1,6 +1,4 @@
-@import './vars.scss';
-@import './reset.scss';
-@import './mixin.scss';
+@import './reset.css';
 @import './tailwind.css';
 @import 'nprogress/nprogress.css';
 

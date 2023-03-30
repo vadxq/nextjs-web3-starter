@@ -1,4 +1,4 @@
-import '@/styles/index.scss';
+import '@/styles/index.css';
 import RootLayoutClient from '@/components/layout';
 import { Flexible } from '@/components/theme/flexible';
 import { Toaster } from '@/components/toast/toast';

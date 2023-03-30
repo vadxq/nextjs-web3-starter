@@ -14,7 +14,7 @@
 
 html {
   line-height: 1.5;
-  // -webkit-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
   -moz-tab-size: 4;
   tab-size: 4;
   width: 100%;
@@ -255,13 +255,11 @@ div:focus {
   outline: none;
 }
 
-.clearfix {
-  &::after {
-    visibility: hidden;
-    display: block;
-    font-size: 0;
-    content: ' ';
-    clear: both;
-    height: 0;
-  }
+.clearfix::after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: ' ';
+  clear: both;
+  height: 0;
 }
