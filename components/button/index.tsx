@@ -4,7 +4,7 @@ import { HTMLAttributes, ReactNode } from 'react';
 import { tv } from 'tailwind-variants';
 
 const button = tv({
-  base: 'font-medium bg-blue-500 text-white rounded-full active:opacity-80',
+  base: 'font-medium bg-blue-500 text-white rounded-full active:opacity-80 cursor-pointer',
   variants: {
     color: {
       primary: 'bg-blue-500 text-white',
@@ -31,16 +31,20 @@ const button = tv({
 interface ButtonProps extends HTMLAttributes<HTMLElement> {
   children?: ReactNode;
   className?: string;
+  size?: 'sm' | 'md';
+  color?: 'primary' | 'secondary';
 }
 
-export const Button = (props: ButtonProps) => {
+export const Button = ({ size, color, children, className }: ButtonProps) => {
   return (
-    <button
-      className={`${button({ size: 'sm', color: 'secondary' })} ${
-        props.className
-      }`}
+    <div
+      className={button({
+        size,
+        color,
+        class: className
+      })}
     >
-      {props.children}
-    </button>
+      {children}
+    </div>
   );
 };
