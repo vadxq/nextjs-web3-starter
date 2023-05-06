@@ -3,10 +3,10 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   experimental: {
-    appDir: true,
+    appDir: true
     // runtime: 'experimental-edge',
     // turbo: true,
-    serverComponentsExternalPackages: ['@prisma/client']
+    // serverComponentsExternalPackages: ['@prisma/client'] // prisma support
   }
 };
 
