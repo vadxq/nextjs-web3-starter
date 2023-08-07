@@ -43,11 +43,14 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 ├── README_zh-CN.md
 ├── app                                      app dir目录
 │   └── [lang]                               语言类型
-│       ├── [id]                             /:id路由
-│       │   ├── loading.tsx                  loading页面
-│       │   └── page.tsx                     page页面
-│       ├── layout.tsx                       全局layout
-│       └── page.tsx                         首页
+│   │   ├── [id]                             /:id路由
+│   │   │   ├── loading.tsx                  loading页面
+│   │   │   └── page.tsx                     page页面
+│   │   ├── layout.tsx                       全局layout
+│   │   └── page.tsx                          首页
+│   └── api                                  api文件夹, 文件路径即路由的方式的API形式
+│       ├── be/[..slug]/route.ts             代理后端路由
+│       └── hello/route.ts                   bff层
 ├── commitlint.config.js                     commitlint
 ├── components                               组件文件夹
 │   ├── button

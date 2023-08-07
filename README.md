@@ -45,11 +45,14 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 ├── README_zh-CN.md
 ├── app                                      app dir
 │   └── [lang]                               language type
-│       ├── [id]                             /:id route
-│       │   ├── loading.tsx                  loading page
-│       │   └── page.tsx                     page
-│       ├── layout.tsx                       global layout
-│       └── page.tsx                         main home
+│   │   ├── [id]                             /:id route
+│   │   │   ├── loading.tsx                  loading page
+│   │   │   └── page.tsx                     page
+│   │   ├── layout.tsx                       global layout
+│   │   └── page.tsx                         main home
+│   └── api                                  api folder, fold route for api
+│       ├── be/[..slug]/route.ts             proxy forwarding backend interface
+│       └── hello/route.ts                  get api
 ├── commitlint.config.js                     commitlint
 ├── components                               components folder
 │   ├── button
@@ -80,11 +83,6 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 ├── next-env.d.ts
 ├── next.config.js                           nextjs config
 ├── package.json
-├── pages                                    At present, the main remaining api is here
-│   └── api                                  api folder
-│       ├── [...slug].ts                     proxy forwarding backend interface
-│       ├── hello.ts
-│       └── post.ts
 ├── pnpm-lock.yaml
 ├── postcss.config.js                        postcss config
 ├── prisma                                   prisma folder

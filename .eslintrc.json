@@ -23,13 +23,7 @@
       "modules": true
     }
   },
-  "plugins": [
-    "react",
-    "react-hooks",
-    "@typescript-eslint",
-    "tailwindcss",
-    "prettier"
-  ],
+  "plugins": ["react", "@typescript-eslint", "tailwindcss", "prettier"],
   "settings": {
     "import/ignore": ["node_modules"],
     "react": {

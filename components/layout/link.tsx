@@ -10,7 +10,6 @@ export default function LayoutLink({
   children,
   className
 }: React.ComponentProps<'a'>) {
-  // eslint-disable-next-line react-hooks/rules-of-hooks
   const startChange = useContext(StartRouterChange);
   const useLink = href && href.startsWith('/');
   if (useLink)

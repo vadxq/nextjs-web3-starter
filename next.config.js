@@ -2,11 +2,21 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
+  compiler: {
+    removeConsole: true
+  },
   experimental: {
-    appDir: true
-    // runtime: 'experimental-edge',
-    // turbo: true,
     // serverComponentsExternalPackages: ['@prisma/client'] // prisma support
+  },
+  rewrites: () => {
+    return [
+      {
+        // 注意，加了一个be/，为什么？为了区分我们项目写的接口，避免被代理进去了。我们只需要代理外部的接口
+        // Note that a be/ is added, why? In order to distinguish the interface written by our project, avoid being proxied. We only need to proxy the external interface
+        source: '/api/be/:slug*',
+        destination: `${process.env.BACKEND_URL}/api/:slug*`
+      }
+    ];
   }
 };
 
