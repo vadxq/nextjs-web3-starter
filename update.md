@@ -1,5 +1,60 @@
 # update
 
+## 2023-10-23
+
+更新了 nextjs 版本为 13.5.6 版本，删除了部分默认的配置项
+
+```bash
+dependencies:
+- @ducanh2912/next-pwa 9.5.0
++ @ducanh2912/next-pwa 9.7.2
+- @prisma/client 5.2.0
++ @prisma/client 5.4.2
+- ethers 6.7.1
++ ethers 6.8.0
+- next 13.4.19
++ next 13.5.6
+- tailwind-variants 0.1.13
++ tailwind-variants 0.1.14
+
+devDependencies:
+- @commitlint/cli 17.7.1
++ @commitlint/cli 17.8.1 (18.0.0 is available)
+- @commitlint/config-conventional 17.7.0
++ @commitlint/config-conventional 17.8.1 (18.0.0 is available)
+- @tailwindcss/forms 0.5.5
++ @tailwindcss/forms 0.5.6
+- @tailwindcss/typography 0.5.9
++ @tailwindcss/typography 0.5.10
+- @types/node 20.5.6
++ @types/node 20.8.7
+- @types/nprogress 0.2.0
++ @types/nprogress 0.2.2
+- @types/react 18.2.21
++ @types/react 18.2.31
+- @types/react-dom 18.2.7
++ @types/react-dom 18.2.14
+- @typescript-eslint/eslint-plugin 6.4.1
++ @typescript-eslint/eslint-plugin 6.8.0
+- @typescript-eslint/parser 6.4.1
++ @typescript-eslint/parser 6.8.0
+- autoprefixer 10.4.15
++ autoprefixer 10.4.16
+- eslint 8.48.0
++ eslint 8.52.0
+- eslint-config-next 13.4.19
++ eslint-config-next 13.5.6
+- eslint-import-resolver-typescript 3.6.0
++ eslint-import-resolver-typescript 3.6.1
+- postcss 8.4.28
++ postcss 8.4.31
+- postcss-scss 4.0.7
++ postcss-scss 4.0.9
+- prisma 5.2.0
++ prisma 5.4.2
+
+```
+
 ## 2023-8-28
 
 由于更新了 nextjs 版本，turbopack 编译产物路径发生变化。所有导致了 i18n 服务的 middleware 拦截出现变化。所以需要修改此问题
