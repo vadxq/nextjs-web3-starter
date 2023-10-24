@@ -81,11 +81,6 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 ├── next-env.d.ts
 ├── next.config.js                           nextjs配置
 ├── package.json
-├── pages                                    目前主要就剩api在这里
-│   └── api                                  api文件夹
-│       ├── [...slug].ts                     代理转发后端接口
-│       ├── hello.ts
-│       └── post.ts
 ├── pnpm-lock.yaml
 ├── postcss.config.js                        postcss配置
 ├── prisma                                   prisma文件夹
