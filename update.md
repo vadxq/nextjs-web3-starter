@@ -1,5 +1,59 @@
 # update
 
+## 2024-07-02
+
+- 增加了nextui的参考配置和shadcn的参考配置
+- 更新了大版本
+
+```bash
+
+dependencies:
+- @ducanh2912/next-pwa 9.7.2
++ @ducanh2912/next-pwa 10.2.7
+- @formatjs/intl-localematcher 0.2.32
++ @formatjs/intl-localematcher 0.5.4
+- next 13.5.6
++ next 14.2.4
+- tailwind-variants 0.1.20
++ tailwind-variants 0.2.1
+
+devDependencies:
+- @commitlint/cli 17.8.1
++ @commitlint/cli 19.3.0
+- @commitlint/config-conventional 17.8.1
++ @commitlint/config-conventional 19.2.2
+- @typescript-eslint/eslint-plugin 6.21.0
++ @typescript-eslint/eslint-plugin 7.15.0
+- @typescript-eslint/parser 6.21.0
++ @typescript-eslint/parser 7.15.0
+- conventional-changelog-cli 2.2.2
++ conventional-changelog-cli 5.0.0
+- cssnano 5.1.15
++ cssnano 7.0.3
+- eslint-config-next 13.5.6
++ eslint-config-next 14.2.4
+- eslint-plugin-prettier 4.2.1
++ eslint-plugin-prettier 5.1.3
+- husky 8.0.3
++ husky 9.0.11
+- lint-staged 14.0.1
++ lint-staged 15.2.7
+- postcss-import 15.1.0
++ postcss-import 16.1.0
+- prettier 2.8.8
++ prettier 3.3.2
+- pretty-quick 3.3.1
++ pretty-quick 4.0.0
+- stylelint 14.16.1
++ stylelint 16.6.1
+- stylelint-config-recommended 9.0.0
++ stylelint-config-recommended 14.0.1
+- stylelint-config-standard 29.0.0
++ stylelint-config-standard 36.0.1
+- stylelint-order 5.0.0
++ stylelint-order 6.0.4
+```
+
 ## 2023-10-23
 
 更新了 nextjs 版本为 13.5.6 版本，删除了部分默认的配置项

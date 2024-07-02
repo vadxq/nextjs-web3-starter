@@ -4,7 +4,7 @@
   "editor.tabSize": 2,
   "editor.formatOnPaste": true,
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
+    "source.fixAll.eslint": "explicit"
   },
   "editor.quickSuggestions": {
     "other": true,
