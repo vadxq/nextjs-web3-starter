@@ -1,11 +1,9 @@
 {
-  "editor.formatOnType": true,
-  "editor.formatOnSave": true,
-  "editor.tabSize": 2,
-  "editor.formatOnPaste": true,
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": "explicit"
+  "search.exclude": {
+    "**/.yarn": true,
+    "**/.pnp.*": true
   },
+  "editor.formatOnSave": true,
   "editor.quickSuggestions": {
     "other": true,
     "comments": true,
@@ -14,10 +12,30 @@
   "files.associations": {
     "editor.snippetSuggestions": "top"
   },
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.guides.bracketPairs": "active",
   "files.autoSave": "afterDelay",
-  "typescript.tsdk": "node_modules/typescript/lib",
-  "typescript.enablePromptUseWorkspaceTsdk": true,
-  "i18next.i18nPaths": "/Users/vadxq/git/nextjs-web3-starter/i18n,/Users/vadxq/git/nextjs-web3-starter/i18n/locales"
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[toml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.detectIndentation": false,
+  "editor.formatOnSaveMode": "modifications"
 }
