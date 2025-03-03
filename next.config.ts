@@ -1,5 +1,6 @@
 import type { NextConfig } from "next";
 import withSerwistInit from "@serwist/next";
+import createNextIntlPlugin from 'next-intl/plugin';
 
 const revision = crypto.randomUUID();
 
@@ -11,9 +12,13 @@ const withSerwist = withSerwistInit({
   disable: process.env.NODE_ENV === "development",
 });
 
+const withNextIntl = createNextIntlPlugin(
+  './lib/i18n/request.ts'
+);
+
 const nextConfig: NextConfig = {
   /* config options here */
   reactStrictMode: true,
 };
 
-export default withSerwist(nextConfig);
+export default withSerwist(withNextIntl(nextConfig));

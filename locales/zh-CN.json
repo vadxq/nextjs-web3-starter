@@ -1,0 +1,9 @@
+{
+  "homePage": {
+    "title": "你好，世界"
+  },
+  "localeSwitcher": {
+    "label": "中文",
+    "locale": "{locale, select, en {English} zhCN {中文} other {Unknown}}"
+  }
+}

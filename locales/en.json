@@ -1,0 +1,9 @@
+{
+  "homePage": {
+    "title": "Hello World"
+  },
+  "localeSwitcher": {
+    "label": "English",
+    "locale": "{locale, select, en {English} zhCN {Chinese} other {Unknown}}"
+  }
+}
