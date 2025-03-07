@@ -2,6 +2,11 @@
   "homePage": {
     "title": "你好，世界"
   },
+  "layout": {
+    "title": "网站标题",
+    "menu": "菜单",
+    "search": "搜索"
+  },
   "localeSwitcher": {
     "label": "中文",
     "locale": "{locale, select, en {English} zhCN {中文} other {Unknown}}"

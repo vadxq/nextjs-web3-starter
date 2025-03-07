@@ -1,1 +1,10 @@
-bun test
+#!/bin/sh
+# . "$(dirname "$0")/_/husky.sh"
+. "$(dirname "$0")/common.sh"
+# evaluate fnm 
+# eval $(fnm env | sed 1d)
+# export PATH=$(cygpath $FNM_MULTISHELL_PATH):$PATH
+
+npm run lint:lint-staged
+npm run lint:pretty
+git add .

@@ -2,8 +2,7 @@ import { useLocale, useTranslations } from 'next-intl';
 import { routing } from '~/lib/i18n/routing';
 import LocaleSwitcherSelect from '~/components/langSelect/localeSwitcherSelect';
 
-
-export default async function LocaleSwitcher() {
+export default function LocaleSwitcher() {
   const t = useTranslations('localeSwitcher');
   const locale = useLocale();
 

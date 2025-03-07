@@ -2,6 +2,11 @@
   "homePage": {
     "title": "Hello World"
   },
+  "layout": {
+    "title": "Website Title",
+    "menu": "Menu",
+    "search": "Search"
+  },
   "localeSwitcher": {
     "label": "English",
     "locale": "{locale, select, en {English} zhCN {Chinese} other {Unknown}}"
